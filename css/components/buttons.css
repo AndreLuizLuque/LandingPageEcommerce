@@ -1,0 +1,9 @@
+/* ============================================================
+   COMPONENT — Botões compartilhados (CTAs base)
+   Os botões específicos das seções (price-cta-button, form-submit-btn,
+   contact-whatsapp-btn) ficam em seus respectivos módulos.
+   ============================================================ */
+.cta-group {
+  display: flex;
+  gap: 16px;
+}

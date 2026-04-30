@@ -1,0 +1,70 @@
+/* ============================================================
+   SECTION — Quote / About
+   ============================================================ */
+.quote-section {
+  padding: 8rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  min-height: 10vh;
+}
+
+.quote-content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.quote-jp {
+  font-family: var(--font-jp);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+  letter-spacing: 0.2em;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.quote-content.in-view .quote-jp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quote-text {
+  font-family: var(--font-body);
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--color-fg);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.2s;
+}
+
+.quote-content.in-view .quote-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quote-text em {
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+.quote-attribution {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-top: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease 0.4s;
+}
+
+.quote-content.in-view .quote-attribution {
+  opacity: 1;
+  transform: translateY(0);
+}

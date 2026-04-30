@@ -1,0 +1,45 @@
+/* ============================================================
+   BASE — reset, tokens, tipografia global
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Cores */
+  --color-bg: #0a0a0a;
+  --color-fg: #ffffff;
+  --color-accent: #91bb4d;
+  --color-muted: #74b438;
+  --color-highlight: #c9b99a;
+  --color-text: #ffffff;
+  --color-gold: #c9b99a;
+
+  /* Tipografia */
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-jp: 'Noto Serif JP', serif;
+
+  /* Transições */
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-muted) var(--color-bg);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  cursor: default;
+}
