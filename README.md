@@ -1,58 +1,53 @@
-# Adidas China New Year Jacket — site estático
+Adidas China New Year Jacket — static site
 
-Site one-page reorganizado em estrutura modular (HTML / CSS / JS puro,
-sem build step).
+One-page site reorganized into a modular structure (HTML, CSS, and pure JavaScript, no build step).
 
-## 📁 Estrutura
+📁 Structure
 
-```
-adidas-cny/
+LandingPageEcommerce/
 ├── index.html
 ├── README.md
-├── assets/                     ← imagens (Back1.png, ChinaxAdidas.png, ...)
+├── assets/                     ← images (Back1.png, ChinaxAdidas.png, ...)
 ├── css/
-│   ├── base.css                ← reset + tokens (cores, fontes, transições)
-│   ├── layout.css              ← containers globais
-│   ├── components/             ← peças reutilizáveis
+│   ├── base.css                ← reset + tokens (colors, fonts, transitions)
+│   ├── layout.css              ← global containers
+│   ├── components/             ← reusable parts
 │   │   ├── preloader.css
 │   │   ├── navbar.css          ← navbar + mobile nav + hamburger
 │   │   ├── cursor.css
 │   │   ├── sidebar-nav.css
 │   │   └── buttons.css
-│   ├── sections/               ← uma folha por bloco da página
+│   ├── sections/               ← one file per page section
 │   │   ├── hero.css
 │   │   ├── quote.css
-│   │   ├── timeline.css        ← timeline + section-cards
-│   │   ├── arcs.css            ← carousel de arcs + nav
+│   │   ├── timeline.css        ← timeline + section cards
+│   │   ├── arcs.css            ← arcs carousel + navigation
 │   │   ├── fullwidth-image.css
 │   │   ├── price.css
 │   │   ├── contact.css
 │   │   └── footer.css
 │   └── utilities/
-│       ├── animations.css      ← keyframes globais
-│       └── responsive.css      ← media queries (carregado por último)
+│       ├── animations.css      ← global keyframes
+│       └── responsive.css      ← media queries, loaded last
 └── js/
-    ├── main.js                 ← entry point (importa todos os módulos)
+    ├── main.js                 ← entry point, imports all modules
     └── modules/
         ├── preloader.js
         ├── navbar.js
         ├── cursor.js
         ├── hero-slideshow.js
-        ├── in-view.js          ← IntersectionObserver para reveal animations
+        ├── in-view.js          ← IntersectionObserver for reveal animations
         ├── sidebar-nav.js
         ├── arc-carousel.js
         └── contact-form.js
-```
 
-## 🎨 Tokens de design (`css/base.css`)
-
-| Token              | Valor       | Uso                          |
-|--------------------|-------------|------------------------------|
-| `--color-bg`       | `#0a0a0a`   | Fundo principal              |
-| `--color-fg`       | `#ffffff`   | Texto principal              |
-| `--color-accent`   | `#91bb4d`   | Detalhes / hovers / linhas   |
-| `--color-muted`    | `#74b438`   | Secundário / textos suaves   |
-| `--color-highlight`| `#c9b99a`   | Dourado / destaque           |
-| `--font-display`   | Bebas Neue  | Títulos                      |
-| `--font-body`      | Inter       | Corpo                        |
-| `--font-jp`        | Noto Serif JP | Caracteres japoneses/chineses |
+| Token               | Value         | Usage                           |
+| ------------------- | ------------- | ------------------------------- |
+| `--color-bg`        | `#0a0a0a`     | Main background                 |
+| `--color-fg`        | `#ffffff`     | Main text                       |
+| `--color-accent`    | `#91bb4d`     | Details, hover, lines           |
+| `--color-muted`     | `#74b438`     | Secondary, subtle text          |
+| `--color-highlight` | `#c9b99a`     | Gold, highlights                |
+| `--font-display`    | Bebas Neue    | Headings                        |
+| `--font-body`       | Inter         | Body text                       |
+| `--font-jp`         | Noto Serif JP | Japanese and Chinese characters |
