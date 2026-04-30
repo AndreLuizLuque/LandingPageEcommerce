@@ -265,5 +265,29 @@ function changeSlide() {
   currentSlide = (currentSlide + 1) % slides.length;
 }
 
+// ============ SLIDE JACKET ============
+
 changeSlide();
 setInterval(changeSlide, 8000);
+
+const images = [
+  "assets/ChinaNewYearJacket1.png",
+  "assets/ChinaNewYearJacket2.png",
+  "assets/ChinaNewYearJacket3.png"
+];
+
+let current = 0;
+const img = document.getElementById("jacketImage");
+
+function changeJacket() {
+  img.style.opacity = 0;
+
+  setTimeout(() => {
+    current = (current + 1) % images.length;
+    img.src = images[current];
+    img.style.opacity = 1;
+  }, 300);
+}
+
+setInterval(changeJacket, 3000);
+
